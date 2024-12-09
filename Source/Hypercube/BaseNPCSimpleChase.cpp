@@ -132,6 +132,9 @@ void ABaseNPCSimpleChase::DelayedInit()
 			}
 		}
 	}
+	if (InitLevel > 0) {
+		SetLevel(InitLevel, InitLevelingType);
+	}
 }
 
 void ABaseNPCSimpleChase::SetTickState(bool bToActivate)

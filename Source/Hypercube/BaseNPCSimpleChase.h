@@ -177,6 +177,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Debug")
 	float DebugDamageIndicatorTime;
 
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats | Leveling")
+	int InitLevel;
+
+	UPROPERTY(EditAnywhere, BlueprintReadWrite, Category = "Stats | Leveling")
+	EEnemyLevelingType InitLevelingType;
+
 protected:
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Stats | Leveling", meta = (AllowPrivateAccess = "true"))
